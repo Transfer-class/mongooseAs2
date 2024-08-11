@@ -1,6 +1,5 @@
 import { TOrder, TUser } from "./user.interface";
 import { User } from "./user.model";
-import userValidationSchema from "./user.zod.validation";
 
 const createUser = async (payload: TUser) => {
   const result = await User.create(payload);

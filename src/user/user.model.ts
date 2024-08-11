@@ -26,18 +26,6 @@ const OrderSchema = new Schema<TOrder>({
   quantity: { type: Number, required: true },
 });
 
-// const UserSchema = new Schema<TUser>({
-//   userId: { type: Number, required: true, unique: true },
-//   userName: { type: String, required: true },
-//   password: { type: String, required: true },
-//   fullName: FullNameSchema,
-//   age: { type: Number, required: true },
-//   email: { type: String, required: true, unique: true },
-//   address: AddressSchema,
-//   isActive: { type: Boolean, required: true },
-//   hobbies: [String],
-//   orders: [OrderSchema],
-// });
 const UserSchema = new Schema<TUser, UserModel>({
   userId: { type: Number, required: true, unique: true },
   userName: { type: String, required: true },
